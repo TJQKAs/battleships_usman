@@ -35,7 +35,12 @@ class BattleshipsWeb < Sinatra::Base
       $board1.place(Ship.destroyer, $position3, $orientation3)
       $board1.place(Ship.submarine, $position4, $orientation4)
       $board1.place(Ship.patrol_boat, $position5, $orientation5)
+<<<<<<< HEAD
       @grid = $board1.print_board
+=======
+      # @grid = $board1.print_board
+      erb :board_game_on
+>>>>>>> fd39bd3060f32311df384253bae6dd2ebebf0aa0
     else
       $board1 = Board.new(Cell)
       $player1.board = $board1
