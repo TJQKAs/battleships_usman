@@ -1,0 +1,42 @@
+Hello <%= @name %>! Welcome to your game of Battleships!
+<%= @grid %>
+<div>
+<form action="/board" method="post">
+ Set Aircraft Carrier position:
+ <input type="text" name="position1" autofocus; required>
+ <br>
+ <input type="radio" name="orientation1" value="horizontal">Horizontal
+ <input type="radio" name="orientation1" value="vertical">Vertical
+ <br>
+ <br>
+ Set Battleship position:
+ <input type="text" name="position2" autofocus>
+ <br>
+ <input type="radio" name="orientation2" value="horizontal">Horizontal
+ <input type="radio" name="orientation2" value="vertical">Vertical
+ <br>
+ <br>
+ Set Destroyer position:
+ <input type="text" name="position3" autofocus>
+ <br>
+ <input type="radio" name="orientation3" value="horizontal">Horizontal
+ <input type="radio" name="orientation3" value="vertical">Vertical
+ <br>
+ <br>
+ Set Submarine position:
+ <input type="text" name="position4" autofocus>
+ <br>
+ <input type="radio" name="orientation4" value="horizontal">Horizontal
+ <input type="radio" name="orientation4" value="vertical">Vertical
+ <br><br>
+ Set Patrol Boat position:
+ <input type="text" name="position5" autofocus>
+ <br>
+ <input type="radio" name="orientation5" value="horizontal">Horizontal
+ <input type="radio" name="orientation5" value="vertical">Vertical
+ <br>
+ <br>
+ <input type="submit" value="Place Ships">
+</form>
+<!-- <% #$board.place($ship, $position1, $orientation1) %> -->
+</div>
